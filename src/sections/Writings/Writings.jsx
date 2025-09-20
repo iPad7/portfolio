@@ -43,28 +43,28 @@ const WritingCard = ({ writing }) => {
 const Writings = () => {
   const writings = [
     {
-      title: 'Transformer 아키텍처 심화 분석: Attention is All You Need 논문 리뷰',
-      excerpt: 'Google의 혁신적인 Transformer 모델을 상세히 분석하고, Self-Attention 메커니즘이 기존 RNN/CNN 기반 모델들을 어떻게 뛰어넘었는지 탐구합니다. 실제 구현 코드와 함께 핵심 개념들을 설명합니다.',
-      date: '2024.03.15',
-      category: '논문 리뷰',
+      title: '[AI&ML] Attention Mechanism',
+      excerpt: 'Transformer 모델 아키텍처의 근간을 이루는 Attention Mechanism을 Dot-product Attention 기반으로 이해합니다. 기존 RNN 기반 Seq2Seq 구조의 문제점, Attention의 콘셉트, 한계점을 요약합니다.',
+      date: '2025.06.07',
+      category: '개인 학습',
       tags: ['Transformer', 'Attention', 'NLP', 'Deep Learning'],
-      url: 'https://your-blog.tistory.com/transformer-review'
+      url: 'https://8000gam.tistory.com/11'
     },
     {
-      title: 'BERT vs GPT: 사전 훈련된 언어 모델의 패러다임 비교',
+      title: '[Mock] BERT vs GPT: 사전 훈련된 언어 모델의 패러다임 비교',
       excerpt: 'BERT의 양방향 인코더 구조와 GPT의 자기회귀적 디코더 구조를 비교 분석합니다. 각 모델의 강점과 적용 분야, 그리고 실무에서의 선택 기준에 대해 데이터와 실험 결과를 바탕으로 설명합니다.',
       date: '2024.02.28',
       category: '논문 리뷰',
       tags: ['BERT', 'GPT', 'Pre-training', 'Language Model'],
-      url: 'https://your-blog.tistory.com/bert-vs-gpt'
+      url: 'https://8000gam.tistory.com/3'
     },
     {
-      title: 'PyTorch vs TensorFlow: 실무 프로젝트 관점에서의 프레임워크 선택 가이드',
+      title: '[Mock] PyTorch vs TensorFlow: 실무 프로젝트 관점에서의 프레임워크 선택 가이드',
       excerpt: '2년간의 실무 경험을 바탕으로 PyTorch와 TensorFlow의 장단점을 객관적으로 비교합니다. 프로젝트 규모, 팀 구성, 배포 환경에 따른 최적의 선택 기준을 제시하고, 실제 마이그레이션 경험도 공유합니다.',
       date: '2024.02.10',
       category: '기술 분석',
       tags: ['PyTorch', 'TensorFlow', 'Framework', 'MLOps'],
-      url: 'https://your-blog.tistory.com/pytorch-tensorflow-comparison'
+      url: 'https://8000gam.tistory.com/10'
     }
   ];
 
@@ -74,7 +74,7 @@ const Writings = () => {
         <h2 className={`${styles.title} text-center`}>Writings & Studies</h2>
 
         <p className={styles.subtitle}>
-          AI와 머신러닝 분야의 최신 논문을 리뷰하고, 실무에서 얻은 인사이트를 공유합니다.
+          AI와 머신러닝 분야의 최신 논문을 리뷰하고, 배우고 있는 IT 기술을 기록합니다.
         </p>
 
         <div className={styles.writingsGrid}>
@@ -85,7 +85,7 @@ const Writings = () => {
 
         <div className={styles.blogLinkContainer}>
           <a
-            href="https://your-blog.tistory.com"
+            href="https://8000gam.tistory.com"
             target="_blank"
             rel="noopener noreferrer"
             className={`btn btn-primary ${styles.blogLink}`}

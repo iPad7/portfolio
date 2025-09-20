@@ -5,46 +5,86 @@ const Skills = () => {
   const mainSkills = [
     {
       name: 'Python',
-      level: 90,
-      icon: '🐍'
+      icon: '🐍',
+      capabilities: [
+        '모듈화 기반 객체 지향 프로그래밍',
+        'ML Pipeline 설계 및 구현',
+      ]
+    },
+    {
+      name: 'Scikit Learn',
+      icon: '📊',
+      capabilities: [
+        '분류/회귀 모델 구축 및 성능 최적화',
+        'Feature Engineering 및 교차 검증 수행'
+      ]
     },
     {
       name: 'PyTorch',
-      level: 85,
-      icon: '🔥'
+      icon: '🔥',
+      capabilities: [
+        '딥러닝 모델 설계 및 분산 학습',
+        'Custom Dataset, DataLoader 및 손실함수 구현'
+      ]
     },
     {
-      name: 'TensorFlow',
-      level: 80,
-      icon: '🧠'
+      name: 'LangChain',
+      icon: '🔗',
+      capabilities: [
+        'LCEL&LangGraph 기반 Agent Pipeline 설계',
+        'RAG 시스템 구축 및 프롬프트 엔지니어링'
+      ]
     },
     {
-      name: 'Scikit-learn',
-      level: 88,
-      icon: '📊'
+      name: 'HuggingFace',
+      icon: '🤗',
+      capabilities: [
+        'Pre-trained sLLM Fine-tuning 및 성능 평가',
+        'Sentiment Analysis, Text Summarization 등 자연어 처리 작업'
+      ]
     }
   ];
 
   const subSkills = [
     {
       name: 'React',
-      level: 85,
-      icon: '⚛️'
+      icon: '⚛️',
+      capabilities: [
+        '컴포넌트 기반 웹 애플리케이션 개발',
+        'Context API 및 상태 관리 구현'
+      ]
     },
     {
-      name: 'JavaScript',
-      level: 80,
-      icon: '📝'
+      name: 'Django',
+      icon: '🎸',
+      capabilities: [
+        'REST API 설계 및 구현',
+        'Channels 기반 실시간 WebSocket 채팅 시스템 구현'
+      ]
     },
     {
-      name: 'CSS',
-      level: 75,
-      icon: '🎨'
+      name: 'FastAPI',
+      icon: '⚡',
+      capabilities: [
+        'Clean Architecture Backend 설계',
+        'ML 및 언어 모델 추론 서버 구축'
+      ]
     },
     {
-      name: 'Firebase',
-      level: 70,
-      icon: '🔥'
+      name: 'Docker',
+      icon: '🐳',
+      capabilities: [
+        '컨테이너 기반 개발 환경 구축',
+        'CI/CD 파이프라인 구성'
+      ]
+    },
+    {
+      name: 'AWS',
+      icon: '☁️',
+      capabilities: [
+        'EC2, RDS, Elasticache 등 클라우드 인프라 운영',
+        'SageMaker를 활용한 ML 모델 배포'
+      ]
     }
   ];
 
@@ -53,14 +93,14 @@ const Skills = () => {
       <div className={styles.skillHeader}>
         <span className={styles.skillIcon}>{skill.icon}</span>
         <span className={styles.skillName}>{skill.name}</span>
-        <span className={styles.skillLevel}>{skill.level}%</span>
       </div>
-      <div className={styles.skillBar}>
-        <div
-          className={styles.skillProgress}
-          style={{ width: `${skill.level}%` }}
-        />
-      </div>
+      <ul className={styles.capabilitiesList}>
+        {skill.capabilities.map((capability, index) => (
+          <li key={index} className={styles.capability}>
+            {capability}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 

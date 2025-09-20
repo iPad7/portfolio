@@ -17,10 +17,10 @@ const Onboarding = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <h1 className={styles.catchphrase}>
-            AI로 문제 해결을 탐구하는 엔지니어, <span className={styles.name}>[Your Name]</span>
+            끊임없이 탐구하는 AI 엔지니어, <span className={styles.name}>이재범</span>
           </h1>
           <p className={styles.subtitle}>
-            데이터 사이언스와 웹 개발의 경계에서 혁신적인 솔루션을 만들어갑니다
+            데이터 사이언스와 웹 개발의 경계에서 새로운 것들을 만들어냅니다
           </p>
         </div>
 

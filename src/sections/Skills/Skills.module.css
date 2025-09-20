@@ -64,53 +64,43 @@
 .skillHeader {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: var(--spacing-sm);
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
 }
 
 .skillIcon {
   font-size: var(--font-size-lg);
-  margin-right: var(--spacing-sm);
 }
 
 .skillName {
   font-size: var(--font-size-lg);
   font-weight: 600;
   color: var(--text-primary);
-  flex: 1;
 }
 
-.skillLevel {
+.capabilitiesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.capability {
   font-size: var(--font-size-md);
-  font-weight: 600;
-  color: var(--color-primary);
-}
-
-.skillBar {
-  width: 100%;
-  height: 8px;
-  background-color: rgba(226, 232, 240, 0.8);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.skillProgress {
-  height: 100%;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-  border-radius: 4px;
-  transition: width 1s ease-out;
+  color: var(--text-secondary);
+  line-height: 1.5;
   position: relative;
+  padding-left: var(--spacing-lg);
 }
 
-.skillProgress::after {
-  content: '';
+.capability::before {
+  content: '•';
+  color: var(--color-primary);
+  font-weight: bold;
   position: absolute;
-  top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  animation: shimmer 2s infinite;
 }
 
 .additionalInfo {
@@ -159,13 +149,9 @@
   }
 
   .skillHeader {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--spacing-xs);
-  }
-
-  .skillLevel {
-    align-self: flex-end;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
   }
 
   .infoText {
