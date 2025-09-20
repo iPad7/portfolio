@@ -60,7 +60,7 @@ const Navbar = () => {
             onClick={() => scrollToSection('onboarding')}
             className={styles.logoButton}
           >
-            Portfolio
+            Jaebeom Lee
           </button>
         </div>
 

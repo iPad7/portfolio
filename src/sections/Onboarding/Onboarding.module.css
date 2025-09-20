@@ -31,7 +31,8 @@
 }
 
 .content {
-  margin-bottom: var(--spacing-4xl);
+  margin-bottom: calc(var(--spacing-xl) * 5);
+  margin-top: calc(var(--spacing-3xl) * 3);
 }
 
 .catchphrase {
