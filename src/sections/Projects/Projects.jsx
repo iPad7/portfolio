@@ -39,19 +39,6 @@ const ProjectCard = ({ project, isMain = false }) => {
           </svg>
           GitHub
         </a>
-        <a
-          href={project.liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`btn btn-primary ${styles.projectButton}`}
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <polyline points="15,3 21,3 21,9"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-          </svg>
-          Live Demo
-        </a>
       </div>
     </div>
   );
@@ -59,30 +46,27 @@ const ProjectCard = ({ project, isMain = false }) => {
 
 const Projects = () => {
   const mainProject = {
-    title: 'AI-Powered Content Analysis Platform',
-    description: '자연어 처리와 머신러닝을 활용하여 대용량 텍스트 데이터를 실시간으로 분석하고 인사이트를 추출하는 플랫폼입니다. 사용자 친화적인 대시보드를 통해 복잡한 AI 분석 결과를 직관적으로 시각화합니다.',
-    role: 'Full-stack AI Engineer로서 NLP 모델 개발부터 웹 인터페이스 구현까지 전체 프로젝트를 주도했습니다. 특히 모델 최적화와 실시간 처리 파이프라인 구축에 중점을 두었습니다.',
-    technologies: ['Python', 'PyTorch', 'React', 'FastAPI', 'PostgreSQL', 'Docker'],
-    githubUrl: 'https://github.com/your-username/ai-content-platform',
-    liveUrl: 'https://your-ai-platform.vercel.app'
+    title: 'AI 인플루언서 연애 상담 스트리밍 플랫폼',
+    description: '톤앤매너가 Fine-tuning된 여러 AI 스트리머(sLLM)과 Agent Pipeline을 통해 여러 시청자와 실시간으로 소통할 수 있는 플랫폼입니다',
+    role: '프로젝트 매니저 및 Full-stack 시스템 엔지니어로서, 프로젝트 기획 및 AI 기술 총괄/지원을 담당하고, FastAPI 기반 LM 추론 서버 설계 및 구현을 담당했습니다. 톤앤매너 데이터 생성, 학습 및 정량적 성능 평가 프로세스를 디자인하고, AI 엔지니어가 설계한 Agent Pipeline을 메인 시스템(Django)에 객체화하여 주입했습니다.',
+    technologies: ['Python', 'JavaScript', 'HuggingFace', 'React', 'Django', 'Django Channels', 'FastAPI', 'PostgreSQL', 'Redis', 'AWS', 'Docker'],
+    githubUrl: 'https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-final-4team'
   };
 
   const miniProjects = [
     {
-      title: 'Stock Price Prediction Model',
-      description: 'LSTM과 Transformer 아키텍처를 비교 분석하여 주식 가격을 예측하는 딥러닝 모델입니다. 실시간 데이터 수집과 모델 학습 자동화를 구현했습니다.',
-      role: 'Data Science 연구원으로서 모델 설계, 하이퍼파라미터 튜닝, 백테스팅 시스템 구축을 담당했습니다.',
-      technologies: ['Python', 'TensorFlow', 'Pandas', 'yfinance', 'Streamlit'],
-      githubUrl: 'https://github.com/your-username/stock-prediction',
-      liveUrl: 'https://stock-prediction-demo.streamlit.app'
+      title: '서울특별시 폐업사업자 분류 예측',
+      description: '서울특별시 자영업자들의 추정 매출, 상권 정보 공공 데이터를 활용해 ML 기반 폐업률 예측 모델을 개발했습니다',
+      role: '기획 및 데이터 수집&전처리를 담당했으며, 탐색적 데이터 분석 단계에서 반응 변수 Label의 불균형성을 확인하고, 설명변수 간 상관분석을 통해 다중공선성을 최소화했습니다. EDA와 전처리 결과를 모델 학습 담당자에게 전달하여, Recall을 평가 지표로 채택하여 실제로 폐업할 가능성이 높은 사업자를 놓치지 않는 것에 집중하도록 모델을 설계할 것을 제언했습니다.',
+      technologies: ['Python', 'Numpy', 'Pandas', 'Scikit-Learn', 'Streamlit'],
+      githubUrl: 'https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-2nd-4team'
     },
     {
-      title: 'Real-time Chat App with Sentiment Analysis',
-      description: '실시간 채팅과 동시에 메시지의 감정을 분석하여 시각화하는 웹 애플리케이션입니다. Firebase를 활용한 실시간 동기화와 사전 훈련된 감정 분석 모델을 통합했습니다.',
-      role: '프론트엔드 개발과 AI 모델 통합을 담당하여 사용자 경험과 AI 기능을 매끄럽게 연결했습니다.',
-      technologies: ['React', 'Firebase', 'Python', 'Flask', 'Chart.js'],
-      githubUrl: 'https://github.com/your-username/sentiment-chat',
-      liveUrl: 'https://sentiment-chat-app.vercel.app'
+      title: '기초 화장품 추천 챗봇',
+      description: '온라인 화장품 쇼핑몰에서 제품 정보, 제품 리뷰 정보를 스크랩하여, 고객 경험 기반 기초 화장품 추천 챗봇을 개발했습니다',
+      role: '데이터 전처리 담당자로서, 스크랩한 데이터를 Vector DB에 적재할 수 있는 JSON 형태로 가공하였습니다. 리뷰 데이터에 사용자의 만족도를 추가하기 위해, Sentiment Analysis 모델을 Full Fine-tuning하여 리뷰 데이터를 긍정/중립/부정으로 Labeling했습니다. OPENAI API로 Few-shot Prompting을 활용하여 학습 데이터를 구축했습니다.',
+      technologies: ['Python', 'Selenium', 'Numpy', 'Pandas', 'OpenAI', 'HuggingFace'],
+      githubUrl: 'https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-3rd-3team'
     }
   ];
 

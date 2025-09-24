@@ -44,26 +44,26 @@ const Writings = () => {
   const writings = [
     {
       title: '[AI&ML] Attention Mechanism',
-      excerpt: 'Transformer 모델 아키텍처의 근간을 이루는 Attention Mechanism을 Dot-product Attention 기반으로 이해합니다. 기존 RNN 기반 Seq2Seq 구조의 문제점, Attention의 콘셉트, 한계점을 요약합니다.',
+      excerpt: 'Transformer 모델 아키텍처의 근간을 이루는 Attention Mechanism을 Dot-product Attention 기반으로 이해합니다.',
       date: '2025.06.07',
-      category: '개인 학습',
+      category: '학습 기록',
       tags: ['Transformer', 'Attention', 'NLP', 'Deep Learning'],
       url: 'https://8000gam.tistory.com/11'
     },
     {
-      title: '[Mock] BERT vs GPT: 사전 훈련된 언어 모델의 패러다임 비교',
-      excerpt: 'BERT의 양방향 인코더 구조와 GPT의 자기회귀적 디코더 구조를 비교 분석합니다. 각 모델의 강점과 적용 분야, 그리고 실무에서의 선택 기준에 대해 데이터와 실험 결과를 바탕으로 설명합니다.',
-      date: '2024.02.28',
-      category: '논문 리뷰',
-      tags: ['BERT', 'GPT', 'Pre-training', 'Language Model'],
+      title: '[플레이데이터 SK네트웍스 Family AI 캠프 13기] 3주차 회고',
+      excerpt: 'SQL 기초와 Python requests 라이브러리 기반 웹 스크래핑 학습 내용, 그리고 부트캠프 첫 팀 프로젝트의 총평과 후기를 기록합니다.',
+      date: '2025.04.13',
+      category: '학습 기록',
+      tags: ['Python', 'SQL', 'Web Scrapping', 'Streamlit'],
       url: 'https://8000gam.tistory.com/3'
     },
     {
-      title: '[Mock] PyTorch vs TensorFlow: 실무 프로젝트 관점에서의 프레임워크 선택 가이드',
-      excerpt: '2년간의 실무 경험을 바탕으로 PyTorch와 TensorFlow의 장단점을 객관적으로 비교합니다. 프로젝트 규모, 팀 구성, 배포 환경에 따른 최적의 선택 기준을 제시하고, 실제 마이그레이션 경험도 공유합니다.',
-      date: '2024.02.10',
-      category: '기술 분석',
-      tags: ['PyTorch', 'TensorFlow', 'Framework', 'MLOps'],
+      title: '[플레이데이터 SK네트웍스 Family AI 캠프 13기] 월간 회고: 5월',
+      excerpt: '여러 순환 신경망, Encoder-Decoder 구조의 Seq2Seq 아키텍처, Attention Mechanism, Transformer에 대해 배운 내용을 기록합니다.',
+      date: '2025.05.31',
+      category: '학습 기록',
+      tags: ['RNN', 'Attention', 'Transformer', 'NLP', 'Deep Learning'],
       url: 'https://8000gam.tistory.com/10'
     }
   ];
