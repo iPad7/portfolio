@@ -100,7 +100,7 @@ const Contact = () => {
 
         <div className={styles.footer}>
           <p className={styles.footerText}>
-            © 2024 Jaebeom Lee. Made with React
+            2025 Jaebeom Lee w/ React
           </p>
         </div>
       </div>
