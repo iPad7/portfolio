@@ -1,0 +1,65 @@
+﻿.timeline {
+  display: grid;
+  gap: 6mm;
+}
+
+.card {
+  border: 1px solid var(--line-subtle);
+  border-radius: 16px;
+  padding: 5mm;
+  background: var(--surface-strong);
+  display: grid;
+  gap: 3mm;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6mm;
+}
+
+.company {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink-900);
+}
+
+.role {
+  font-size: 0.9rem;
+  color: var(--ink-600);
+}
+
+.meta {
+  display: grid;
+  gap: 2px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ink-500);
+  text-align: right;
+}
+
+.summary {
+  font-size: 0.9rem;
+}
+
+.highlights {
+  list-style: none;
+  display: grid;
+  gap: 2mm;
+}
+
+.highlightItem {
+  position: relative;
+  padding-left: 16px;
+  color: var(--ink-600);
+  font-size: 0.85rem;
+}
+
+.highlightItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-400);
+}

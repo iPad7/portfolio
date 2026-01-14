@@ -1,0 +1,15 @@
+﻿.printRoot {
+  min-height: 100vh;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+@media print {
+  .printRoot {
+    padding: 0;
+    gap: 0;
+  }
+}

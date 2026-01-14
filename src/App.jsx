@@ -1,30 +1,35 @@
-import React from 'react';
-import './global.css';
-
-// Components
-import Navbar from './components/Navbar/Navbar';
-
-// Sections
-import Onboarding from './sections/Onboarding/Onboarding';
-import About from './sections/About/About';
-import Skills from './sections/Skills/Skills';
-import Projects from './sections/Projects/Projects';
-import Writings from './sections/Writings/Writings';
-import Contact from './sections/Contact/Contact';
+﻿import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AppShell from './components/AppShell/AppShell';
+import Home from './pages/Home/Home';
+import Profile from './pages/Profile/Profile';
+import Career from './pages/Career/Career';
+import TechStack from './pages/TechStack/TechStack';
+import Projects from './pages/Projects/Projects';
+import ProjectDetail from './pages/ProjectDetail/ProjectDetail';
+import Contact from './pages/Contact/Contact';
+import Print from './pages/Print/Print';
+import Login from './pages/Login/Login';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <main>
-        <Onboarding />
-        <About />
-        <Skills />
-        <Projects />
-        <Writings />
-        <Contact />
-      </main>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/print" element={<Print />} />
+        <Route path="/login" element={<Login />} />
+        <Route element={<AppShell />}>
+          <Route index element={<Home />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="career" element={<Career />} />
+          <Route path="tech-stack" element={<TechStack />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="projects/:slug" element={<ProjectDetail />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

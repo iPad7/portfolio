@@ -1,0 +1,114 @@
+﻿.layout {
+  display: grid;
+  gap: 6mm;
+}
+
+.featured {
+  border: 1px solid var(--line-subtle);
+  border-radius: 18px;
+  padding: 6mm;
+  background: linear-gradient(120deg, rgba(224, 122, 95, 0.15), rgba(42, 157, 143, 0.08));
+  display: grid;
+  gap: 4mm;
+}
+
+.featuredHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 6mm;
+  align-items: flex-start;
+}
+
+.featuredBadge {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: var(--accent-600);
+  padding: 4px 10px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.projectTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink-900);
+}
+
+.projectSummary {
+  font-size: 0.9rem;
+  color: var(--ink-600);
+}
+
+.featuredMeta {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ink-500);
+  text-align: right;
+  display: grid;
+  gap: 2px;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--surface-muted);
+  border: 1px solid var(--line-subtle);
+  font-size: 0.7rem;
+  color: var(--ink-700);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.link {
+  color: var(--accent-600);
+  font-weight: 600;
+}
+
+.linkHint {
+  font-size: 0.75rem;
+  color: var(--ink-500);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6mm;
+}
+
+.card {
+  border: 1px solid var(--line-subtle);
+  border-radius: 16px;
+  padding: 5mm;
+  background: var(--surface-strong);
+  display: grid;
+  gap: 3mm;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4mm;
+}
+
+.cardPeriod {
+  font-size: 0.75rem;
+  color: var(--ink-500);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}

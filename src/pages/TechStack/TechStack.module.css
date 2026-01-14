@@ -1,0 +1,35 @@
+﻿.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6mm;
+}
+
+.card {
+  border: 1px solid var(--line-subtle);
+  border-radius: 16px;
+  padding: 5mm;
+  background: var(--surface-strong);
+  display: grid;
+  gap: 3mm;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink-900);
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--surface-muted);
+  border: 1px solid var(--line-subtle);
+  font-size: 0.75rem;
+  color: var(--ink-700);
+}

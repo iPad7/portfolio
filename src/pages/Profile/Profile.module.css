@@ -1,0 +1,89 @@
+﻿.layout {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 10mm;
+}
+
+.summary {
+  display: grid;
+  gap: 6mm;
+}
+
+.section {
+  display: grid;
+  gap: 3mm;
+}
+
+.sectionTitle {
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.headline {
+  font-size: 1.2rem;
+  color: var(--ink-900);
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 2mm;
+  color: var(--ink-600);
+  font-size: 0.9rem;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 16px;
+}
+
+.listItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-400);
+}
+
+.side {
+  display: grid;
+  gap: 6mm;
+}
+
+.photoCard {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line-subtle);
+}
+
+.factCard {
+  background: var(--surface-muted);
+  border: 1px solid var(--line-subtle);
+  border-radius: 16px;
+  padding: 4mm;
+  display: grid;
+  gap: 3mm;
+}
+
+.factList {
+  display: grid;
+  gap: 3mm;
+}
+
+.factItem {
+  display: grid;
+  gap: 2px;
+  font-size: 0.85rem;
+}
+
+.factLabel {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.factValue {
+  color: var(--ink-700);
+}

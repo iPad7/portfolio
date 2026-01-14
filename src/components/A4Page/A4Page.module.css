@@ -1,0 +1,105 @@
+﻿.page {
+  width: var(--page-width);
+  height: var(--page-height);
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line-subtle);
+  box-shadow: var(--shadow-lg);
+  padding: 18mm 16mm 14mm;
+  display: flex;
+  flex-direction: column;
+  gap: 10mm;
+  position: relative;
+  overflow: hidden;
+  animation: pageIn 0.6s ease both;
+}
+
+.page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8mm;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(224, 122, 95, 0.5), rgba(42, 157, 143, 0.2));
+  opacity: 0.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12mm;
+}
+
+.headerText {
+  max-width: 70%;
+}
+
+.kicker {
+  font-size: 0.7rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+  font-weight: 600;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-family: var(--font-display);
+  color: var(--ink-900);
+  margin: 0.4rem 0 0;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  color: var(--ink-600);
+  font-size: 1rem;
+}
+
+.headerMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--ink-500);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.pageNumber {
+  font-weight: 600;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8mm;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--ink-500);
+  border-top: 1px solid var(--line-subtle);
+  padding-top: 0.5rem;
+}
+
+@media print {
+  .page {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    animation: none;
+    page-break-after: always;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page {
+    animation: none;
+  }
+}

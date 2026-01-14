@@ -1,0 +1,131 @@
+﻿.home {
+  position: relative;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 10mm;
+  align-items: start;
+}
+
+.heroText {
+  display: grid;
+  gap: 6mm;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--ink-700);
+}
+
+.contactRow {
+  display: grid;
+  gap: 4mm;
+}
+
+.contactItem {
+  display: flex;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--ink-700);
+}
+
+.contactLabel {
+  width: 60px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ink-500);
+}
+
+.heroPanel {
+  background: var(--surface-muted);
+  border-radius: 16px;
+  padding: 6mm;
+  border: 1px solid var(--line-subtle);
+  display: grid;
+  gap: 4mm;
+}
+
+.panelTitle {
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.statGrid {
+  display: grid;
+  gap: 4mm;
+}
+
+.stat {
+  display: grid;
+  gap: 2px;
+}
+
+.statValue {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--ink-900);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.statDetail {
+  font-size: 0.85rem;
+  color: var(--ink-600);
+}
+
+.focusGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4mm;
+}
+
+.focusCard {
+  border: 1px solid var(--line-subtle);
+  border-radius: 14px;
+  padding: 4mm;
+  background: var(--surface-strong);
+  display: grid;
+  gap: 2mm;
+}
+
+.focusTitle {
+  font-weight: 600;
+  color: var(--ink-900);
+}
+
+.focusDescription {
+  font-size: 0.9rem;
+}
+
+.signature {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2mm;
+  border-top: 1px solid var(--line-subtle);
+  font-size: 0.85rem;
+  color: var(--ink-600);
+}
+
+.signatureLine {
+  max-width: 70%;
+  font-style: italic;
+  color: var(--ink-500);
+}
+
+.signatureName {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--ink-900);
+}

@@ -1,0 +1,70 @@
+﻿.layout {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 60%;
+}
+
+.form {
+  width: 360px;
+  display: grid;
+  gap: 4mm;
+  padding: 6mm;
+  border-radius: 16px;
+  border: 1px solid var(--line-subtle);
+  background: var(--surface-strong);
+}
+
+.field {
+  display: grid;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--ink-700);
+}
+
+.field input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line-subtle);
+  font-size: 0.9rem;
+}
+
+.buttonPrimary {
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: none;
+  background: var(--accent-600);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buttonPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.buttonSecondary {
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line-subtle);
+  background: var(--surface-muted);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.loggedIn {
+  display: grid;
+  gap: 3mm;
+  align-items: start;
+}
+
+.helper {
+  font-size: 0.75rem;
+  color: var(--ink-500);
+}
+
+.error {
+  font-size: 0.8rem;
+  color: var(--accent-600);
+}

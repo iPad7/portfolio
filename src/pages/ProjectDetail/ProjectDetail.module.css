@@ -1,0 +1,85 @@
+﻿.metaRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4mm;
+  background: var(--surface-muted);
+  border: 1px solid var(--line-subtle);
+  border-radius: 12px;
+  padding: 4mm;
+}
+
+.metaItem {
+  display: grid;
+  gap: 2px;
+}
+
+.metaLabel {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.metaValue {
+  font-size: 0.85rem;
+  color: var(--ink-700);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 8mm;
+}
+
+.section {
+  display: grid;
+  gap: 4mm;
+}
+
+.sectionTitle {
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 2mm;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 16px;
+  font-size: 0.85rem;
+  color: var(--ink-600);
+}
+
+.listItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-400);
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--surface-muted);
+  border: 1px solid var(--line-subtle);
+  font-size: 0.7rem;
+  color: var(--ink-700);
+}
+
+.backLink {
+  color: var(--accent-600);
+  font-weight: 600;
+  font-size: 0.85rem;
+}

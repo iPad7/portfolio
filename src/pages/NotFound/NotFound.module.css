@@ -1,0 +1,11 @@
+﻿.content {
+  display: grid;
+  gap: 4mm;
+  font-size: 0.95rem;
+  color: var(--ink-600);
+}
+
+.link {
+  color: var(--accent-600);
+  font-weight: 600;
+}
