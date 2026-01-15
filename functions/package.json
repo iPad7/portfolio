@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "portfolio-functions",
   "private": true,
   "main": "index.js",
@@ -9,7 +9,7 @@
   "dependencies": {
     "@sparticuz/chromium": "^122.0.0",
     "firebase-admin": "^12.1.0",
-    "firebase-functions": "^4.6.0",
+    "firebase-functions": "^7.0.3",
     "puppeteer-core": "^22.6.0"
   }
 }
