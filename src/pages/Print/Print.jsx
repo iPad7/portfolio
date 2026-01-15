@@ -1,7 +1,6 @@
 ﻿import React, { useEffect, useMemo } from 'react';
 import { projects } from '../../data/portfolio';
 import Home from '../Home/Home';
-import Profile from '../Profile/Profile';
 import Career from '../Career/Career';
 import TechStack from '../TechStack/TechStack';
 import Projects from '../Projects/Projects';
@@ -18,7 +17,6 @@ const Print = () => {
   const pages = useMemo(() => {
     const basePages = [
       { key: 'home', component: Home },
-      { key: 'profile', component: Profile },
       { key: 'career', component: Career },
       { key: 'tech-stack', component: TechStack },
       { key: 'projects', component: Projects }

@@ -83,3 +83,13 @@
   font-weight: 600;
   font-size: 0.85rem;
 }
+
+.growth {
+  margin-top: 4mm;
+  padding: 3mm 4mm;
+  border-radius: 10px;
+  border: 1px solid var(--line-subtle);
+  background: var(--surface-muted);
+  font-size: 0.85rem;
+  color: var(--ink-600);
+}

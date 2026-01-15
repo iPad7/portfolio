@@ -1,4 +1,21 @@
-﻿.timeline {
+﻿.sections {
+  display: grid;
+  gap: 8mm;
+}
+
+.section {
+  display: grid;
+  gap: 4mm;
+}
+
+.sectionHeading {
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.timeline {
   display: grid;
   gap: 6mm;
 }

@@ -1,8 +1,8 @@
 ﻿export const site = {
   name: 'Jaebeom Lee',
-  role: 'AI Engineer',
-  title: 'AI Engineer / ML Engineer',
-  tagline: 'Agentic AI와 실전 제품 사이를 잇는 엔지니어',
+  role: 'LLM Agent Quality Engineer',
+  title: 'LLM Agent Quality Engineer',
+  tagline: 'LLM 기반 Agent 시스템의 품질과 신뢰성을 설계·검증하는 AI 엔지니어',
   location: 'Seoul, KR',
   email: '8000gam@gmail.com',
   github: 'https://github.com/iPad7',
@@ -12,8 +12,7 @@
 
 export const navigation = [
   { label: 'Main', path: '/' },
-  { label: 'Profile', path: '/profile' },
-  { label: 'Career', path: '/career' },
+  { label: 'Programs', path: '/career' },
   { label: 'Tech Stack', path: '/tech-stack' },
   { label: 'Projects', path: '/projects' },
   { label: 'Contact', path: '/contact' }
@@ -21,108 +20,99 @@ export const navigation = [
 
 export const metrics = [
   {
-    label: 'End-to-end Projects',
-    value: '3',
-    detail: 'Data → Model → Product'
+    label: 'Evaluation',
+    value: 'Quant + Qual',
+    detail: 'BERTScore · ROUGE · LLM Judge'
   },
   {
-    label: 'LLM / Agent Pipelines',
-    value: '2',
-    detail: 'RAG + LangGraph'
+    label: 'Safety Tests',
+    value: 'Adversarial',
+    detail: 'Prompt Attack · Policy Check'
   },
   {
-    label: 'Deployment Focus',
-    value: 'FastAPI & Docker',
-    detail: 'Production-ready'
+    label: 'Benchmarks',
+    value: 'Framework',
+    detail: 'LangGraph vs LCEL · Latency'
   }
 ];
 
 export const focusAreas = [
   {
-    title: 'Agentic AI',
-    description: 'LangGraph 기반 멀티 에이전트 설계 및 운영.'
+    title: 'LLM Evaluation',
+    description: '정량/정성 지표 설계와 평가 프로토콜 구축.'
   },
   {
-    title: 'LLMOps',
-    description: '실험-검증-배포를 잇는 모델 라이프사이클 설계.'
+    title: 'Agent Reliability',
+    description: '안전성·회귀 테스트로 응답 품질 안정화.'
   },
   {
-    title: 'Product Thinking',
-    description: '문제 정의부터 KPI까지 제품 관점으로 설계.'
+    title: 'Experiment Design',
+    description: '비교 실험과 재현 가능한 테스트 스크립트 설계.'
   }
 ];
 
 export const profile = {
-  headline: '문제를 구조화해 실전형 AI 제품으로 연결하는 엔지니어.',
+  headline: 'LLM Agent 품질을 정의하고 검증하는 AI 엔지니어.',
   summary: [
-    '데이터 사이언스와 소프트웨어 엔지니어링 경계를 넘나들며 모델을 제품으로 완성하는 과정에 집중합니다.',
-    'Agentic AI, MLOps/LLMOps를 바탕으로 실험-검증-배포 사이클을 단축하고, 지속 가능한 성능 개선을 지향합니다.'
+    '정량 지표(BERTScore, ROUGE)와 정성 평가(LLM-as-a-Judge)를 결합해 품질 기준을 세웁니다.',
+    '안전성·어드버서리얼 테스트와 프레임워크 비교 실험으로 재현 가능한 평가 파이프라인을 구축합니다.'
   ],
   strengths: [
-    '모델 성능과 제품 경험을 동시에 고려한 설계',
-    '데이터 파이프라인부터 서비스 운영까지 풀스택 경험',
-    '협업을 위한 문서화와 실험 기록 정리'
+    '평가 지표/프로토콜 설계 및 실험 비교',
+    'LLM-as-a-Judge 기반 정성 평가 자동화',
+    'Latency·비용 측정 포함 성능 벤치마킹',
+    '실험 로그와 테스트 스크립트로 재현성 확보'
   ],
   values: [
-    '작은 개선을 빠르게 쌓아 제품 품질을 끌어올립니다.',
-    '문제 정의와 지표 설계를 명확히 합니다.',
-    '재현 가능성과 유지보수를 최우선으로 둡니다.'
+    '평가 기준을 먼저 정의하고 구현을 검증합니다.',
+    '정량과 정성을 균형 있게 사용합니다.',
+    '재현 가능한 실험과 근거 기반 개선을 우선합니다.'
   ],
   facts: [
     { label: 'Base', value: 'Seoul, Korea' },
-    { label: 'Focus', value: 'Agentic AI / MLOps' },
+    { label: 'Focus', value: 'LLM Agent Quality & Evaluation' },
     { label: 'GitHub', value: 'github.com/iPad7' },
     { label: 'Blog', value: '8000gam.tistory.com' }
   ]
 };
 
-export const career = [
-  {
-    company: 'SK Networks Family AI Camp',
-    role: 'AI Engineer Trainee',
-    period: '2025.03 - 2025.08',
-    location: 'Seoul, KR',
-    summary: '실무형 AI 프로젝트를 중심으로 팀 기반 제품 개발과 모델 배포 경험을 확보했습니다.',
-    highlights: [
-      'LLM 기반 상담 플랫폼의 에이전트 설계 및 백엔드 구현',
-      '데이터 수집-정제-학습-배포 파이프라인 구축',
-      '프로젝트 문서화 및 데모 발표 리딩'
-    ]
-  },
-  {
-    company: 'Independent Projects',
-    role: 'AI Engineer',
-    period: '2024.06 - Present',
-    location: 'Remote',
-    summary: 'Agentic AI와 추천 시스템을 중심으로 개인 프로젝트를 수행했습니다.',
-    highlights: [
-      'Fine-tuning 및 평가 프로세스 설계',
-      'RAG 기반 검색/요약 기능 구현',
-      '프로덕션 관점의 성능 최적화 및 모니터링 설계'
-    ]
-  }
-];
+export const career = {
+  experience: [],
+  programs: [
+    {
+      company: 'SK Networks Family AI Camp',
+      role: 'AI Engineer Trainee',
+      period: '2025.03 - 2025.08',
+      location: 'Seoul, KR',
+      summary: '팀 프로젝트에서 LLM 에이전트 품질 평가와 실험 설계를 중심으로 수행했습니다.',
+      highlights: [
+        '정량/정성 평가 지표 설계 및 결과 리포팅',
+        'LangGraph vs LCEL 비교 실험 및 병목 분석',
+        '안전성 테스트 시나리오 구성 및 회귀 점검'
+      ]
+    },
+    {
+      company: 'Meta Llama Academy',
+      role: 'Workshop Participant',
+      period: '2025',
+      location: 'Remote',
+      summary: 'LLM/Agent 활용 사례와 평가 흐름을 학습한 워크숍 프로그램 참여.',
+      highlights: [
+        '평가 기준 수립과 실험 설계 사례 학습',
+        'LLM 응답 품질/안전성 점검 방법 논의'
+      ]
+    }
+  ]
+};
 
 export const techStack = [
   {
-    title: 'Core ML',
-    items: ['Python', 'PyTorch', 'Scikit-learn', 'Pandas', 'NumPy']
+    title: 'Core Technologies',
+    items: ['Python', 'LangGraph', 'LangChain', 'RAG', 'FastAPI', 'PostgreSQL', 'Docker', 'BERTScore', 'ROUGE']
   },
   {
-    title: 'LLM & Agent',
-    items: ['LangChain', 'LangGraph', 'RAG', 'Prompt Engineering', 'Hugging Face']
-  },
-  {
-    title: 'Backend',
-    items: ['FastAPI', 'Django', 'Django Channels', 'PostgreSQL', 'Redis']
-  },
-  {
-    title: 'Infra & MLOps',
-    items: ['Docker', 'AWS (EC2, RDS, S3)', 'GitHub Actions', 'SageMaker']
-  },
-  {
-    title: 'Frontend',
-    items: ['React', 'Vite', 'CSS Modules']
+    title: 'Familiar With',
+    items: ['PyTorch', 'Hugging Face', 'Redis', 'AWS (EC2, RDS, S3)', 'Django', 'React', 'GitHub Actions']
   }
 ];
 
@@ -131,23 +121,31 @@ export const projects = [
     slug: 'ai-influencer-streaming',
     title: 'AI 인플루언서 기반 실시간 상담 스트리밍',
     period: '2025',
-    summary: 'Fine-tuned sLLM과 Agent Pipeline으로 실시간 상담을 제공하는 스트리밍 플랫폼.',
-    role: 'Project Lead / Full-stack AI Engineer',
+    summary: 'Fine-tuned sLLM 기반 상담 에이전트를 구축하고 평가·검증 파이프라인으로 품질을 안정화한 스트리밍 플랫폼.',
+    role: 'Project Lead / LLM Evaluation Engineer',
     responsibilities: [
-      '멀티 에이전트 구조 설계 및 역할 분리',
-      'FastAPI 기반 추론 서버 및 실시간 메시지 처리',
-      'React 기반 상담 UI와 운영 대시보드 구축'
+      '정량 지표(BERTScore, ROUGE)와 정성 평가(LLM-as-a-Judge) 설계',
+      'Safety/Adversarial 테스트 케이스 설계 및 회귀 점검',
+      'LangGraph vs LCEL 비교 실험 및 병목 분석',
+      'LangGraph 리팩터링 및 속도 테스트 스크립트 구축'
+    ],
+    evaluation: [
+      'BERTScore/ROUGE/Latency 기반 정량 평가 파이프라인 구성',
+      'LLM-as-a-Judge로 답변 적합도·일관성 정성 평가',
+      'Adversarial 입력 및 안전성 테스트 설계',
+      '프레임워크 전환 시 품질/성능 리그레션 체크'
     ],
     highlights: [
-      'Agentic AI 워크플로우 도입으로 응답 품질 안정화',
-      '스트리밍 환경에서의 지연 시간 최소화',
-      'Django Channels로 실시간 메시징 구현'
+      '평가 기준을 기반으로 응답 품질 변동성 점검',
+      'Latency 측정과 비용 추정으로 배포 기준 마련',
+      '실험 로그 정리로 비교 평가 재현성 확보'
     ],
     outcomes: [
-      '대화 응답 일관성 향상',
-      '운영 대시보드로 시나리오 관리 효율화'
+      '평가 결과를 근거로 프롬프트/에이전트 정책 개선',
+      '품질 리그레션 점검 루틴을 확보'
     ],
-    stack: ['Python', 'React', 'Django', 'Django Channels', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'AWS'],
+    growth: '현재는 모델/프레임워크 단위 평가 중심이며, agent module interaction에 대한 system-level testing으로 확장 중.',
+    stack: ['Python', 'LangGraph', 'LangChain', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'AWS'],
     links: {
       github: 'https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-final-4team'
     },

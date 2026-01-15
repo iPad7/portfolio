@@ -1,11 +1,11 @@
 ﻿import React from 'react';
 import A4Page from '../../components/A4Page/A4Page';
-import { site, metrics, focusAreas } from '../../data/portfolio';
+import { site, metrics, focusAreas, profile } from '../../data/portfolio';
 import styles from './Home.module.css';
 
 const Home = ({ pageNumber }) => (
   <A4Page
-    kicker="AI Engineer Portfolio"
+    kicker="LLM Agent Quality Engineer Portfolio"
     title={site.name}
     subtitle={`${site.title} · ${site.location}`}
     pageNumber={pageNumber}
@@ -44,6 +44,48 @@ const Home = ({ pageNumber }) => (
         </div>
       </div>
     </div>
+    <div className={styles.profileGrid}>
+      <div className={styles.profileSummary}>
+        <span className={styles.sectionLabel}>Positioning</span>
+        <h3 className={styles.profileHeadline}>{profile.headline}</h3>
+        {profile.summary.map((text) => (
+          <p key={text}>{text}</p>
+        ))}
+      </div>
+      <div className={styles.profileSide}>
+        <div className={styles.profileCard}>
+          <span className={styles.sectionLabel}>Strengths</span>
+          <ul className={styles.list}>
+            {profile.strengths.map((item) => (
+              <li key={item} className={styles.listItem}>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className={styles.profileCard}>
+          <span className={styles.sectionLabel}>Values</span>
+          <ul className={styles.list}>
+            {profile.values.map((item) => (
+              <li key={item} className={styles.listItem}>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className={styles.profileCard}>
+          <span className={styles.sectionLabel}>Quick Facts</span>
+          <div className={styles.factList}>
+            {profile.facts.map((fact) => (
+              <div key={fact.label} className={styles.factItem}>
+                <span className={styles.factLabel}>{fact.label}</span>
+                <span className={styles.factValue}>{fact.value}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
     <div className={styles.focusGrid}>
       {focusAreas.map((area) => (
         <div key={area.title} className={styles.focusCard}>
@@ -54,7 +96,7 @@ const Home = ({ pageNumber }) => (
     </div>
     <div className={styles.signature}>
       <span className={styles.signatureLine}>
-        “실험에서 끝나지 않는 AI, 실제 제품으로 완성합니다.”
+        “평가 기준을 정립하고 검증해 신뢰할 수 있는 LLM Agent를 만듭니다.”
       </span>
       <span className={styles.signatureName}>{site.name}</span>
     </div>

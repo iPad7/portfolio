@@ -9,6 +9,93 @@
   align-items: start;
 }
 
+.profileGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 8mm;
+  margin-top: 8mm;
+}
+
+.profileSummary {
+  display: grid;
+  gap: 3mm;
+}
+
+.profileHeadline {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink-900);
+}
+
+.profileSummary p {
+  font-size: 0.85rem;
+  color: var(--ink-600);
+}
+
+.profileSide {
+  display: grid;
+  gap: 3mm;
+}
+
+.profileCard {
+  border: 1px solid var(--line-subtle);
+  border-radius: 14px;
+  padding: 4mm;
+  background: var(--surface-strong);
+  display: grid;
+  gap: 2mm;
+}
+
+.sectionLabel {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 1.5mm;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 12px;
+  font-size: 0.78rem;
+  color: var(--ink-600);
+}
+
+.listItem::before {
+  content: '-';
+  position: absolute;
+  left: 0;
+  color: var(--accent-400);
+}
+
+.factList {
+  display: grid;
+  gap: 1.5mm;
+}
+
+.factItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.factLabel {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.factValue {
+  font-size: 0.75rem;
+  color: var(--ink-700);
+}
+
 .heroText {
   display: grid;
   gap: 6mm;

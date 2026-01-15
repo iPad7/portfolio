@@ -62,6 +62,18 @@ const ProjectDetail = ({ project: projectProp, pageNumber }) => {
               </li>
             ))}
           </ul>
+          {project.evaluation?.length ? (
+            <>
+              <span className={styles.sectionTitle}>Evaluation & Quality</span>
+              <ul className={styles.list}>
+                {project.evaluation.map((item) => (
+                  <li key={item} className={styles.listItem}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : null}
           <span className={styles.sectionTitle}>Highlights</span>
           <ul className={styles.list}>
             {project.highlights.map((item) => (
@@ -90,6 +102,7 @@ const ProjectDetail = ({ project: projectProp, pageNumber }) => {
           </div>
         </div>
       </div>
+      {project.growth ? <p className={styles.growth}>{project.growth}</p> : null}
       {!projectProp && (
         <Link to="/projects" className={`${styles.backLink} no-print`}>
           ← 프로젝트 목록으로
