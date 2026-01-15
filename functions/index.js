@@ -1,5 +1,4 @@
-const { onRequest, HttpsError } = require('firebase-functions/v2/https');
-const { beforeUserCreated, beforeUserSignedIn } = require('firebase-functions/v2/identity');
+const { onRequest } = require('firebase-functions/v2/https');
 const admin = require('firebase-admin');
 const chromium = require('@sparticuz/chromium');
 const puppeteer = require('puppeteer-core');
@@ -12,21 +11,6 @@ const getAllowedEmails = () => {
   const raw = process.env.PDF_ALLOWED_EMAILS || DEFAULT_ALLOWED_EMAILS;
   return raw.split(',').map((email) => email.trim()).filter(Boolean);
 };
-
-const assertAllowedEmail = (email) => {
-  const allowedEmails = getAllowedEmails();
-  if (!email || !allowedEmails.includes(email)) {
-    throw new HttpsError('permission-denied', 'Not authorized.');
-  }
-};
-
-exports.enforceAllowedEmailOnCreate = beforeUserCreated((event) => {
-  assertAllowedEmail(event.data.email);
-});
-
-exports.enforceAllowedEmailOnSignIn = beforeUserSignedIn((event) => {
-  assertAllowedEmail(event.data.email);
-});
 
 exports.generatePdf = onRequest(
   {
