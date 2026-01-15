@@ -1,13 +1,10 @@
 ﻿import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { navigation, site } from '../../data/portfolio';
-import { useAuth } from '../../context/AuthContext';
 import PdfDownloadButton from '../PdfDownloadButton/PdfDownloadButton';
 import styles from './Sidebar.module.css';
 
 const Sidebar = () => {
-  const { user, signOut } = useAuth();
-
   return (
     <aside className={`${styles.sidebar} no-print`}>
       <div className={styles.brand}>
@@ -32,18 +29,6 @@ const Sidebar = () => {
 
       <div className={styles.actions}>
         <PdfDownloadButton />
-        {user ? (
-          <>
-            <span className={styles.user}>{user.email}</span>
-            <button type="button" className={styles.signOut} onClick={signOut}>
-              Sign out
-            </button>
-          </>
-        ) : (
-          <Link to="/login" className={styles.signIn}>
-            Admin login
-          </Link>
-        )}
       </div>
 
       <div className={styles.footer}>

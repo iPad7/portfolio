@@ -9,7 +9,6 @@ import Projects from './pages/Projects/Projects';
 import ProjectDetail from './pages/ProjectDetail/ProjectDetail';
 import Contact from './pages/Contact/Contact';
 import Print from './pages/Print/Print';
-import Login from './pages/Login/Login';
 import NotFound from './pages/NotFound/NotFound';
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/print" element={<Print />} />
-        <Route path="/login" element={<Login />} />
         <Route element={<AppShell />}>
           <Route index element={<Home />} />
           <Route path="profile" element={<Profile />} />
