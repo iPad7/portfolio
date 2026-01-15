@@ -16,7 +16,8 @@ exports.generatePdf = onRequest(
   {
     region: 'asia-northeast3',
     memory: '2GiB',
-    timeoutSeconds: 120
+    timeoutSeconds: 120,
+    invoker: 'public'
   },
   async (req, res) => {
     if (req.method !== 'GET') {
