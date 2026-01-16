@@ -38,8 +38,8 @@ export const metrics = [
 
 export const focusAreas = [
   {
-    title: 'LLM Evaluation',
-    description: '정량/정성 지표 설계와 평가 프로토콜 구축.'
+    title: 'LLM SFT & Evaluation',
+    description: 'PEFT 미세 조정 & 정량/정성 평가 지표 설계.'
   },
   {
     title: 'Agent Reliability',
@@ -82,24 +82,26 @@ export const career = {
     {
       company: 'SK Networks Family AI Camp',
       role: 'AI Engineer Trainee',
-      period: '2025.03 - 2025.08',
+      period: '2025.03 - 2025.09',
       location: 'Seoul, KR',
-      summary: '팀 프로젝트에서 LLM 에이전트 품질 평가와 실험 설계를 중심으로 수행했습니다.',
+      summary: '팀 프로젝트에서 LLM Agent 품질 평가와 실험 설계를 중심으로 수행했습니다.',
       highlights: [
-        '정량/정성 평가 지표 설계 및 결과 리포팅',
-        'LangGraph vs LCEL 비교 실험 및 병목 분석',
-        '안전성 테스트 시나리오 구성 및 회귀 점검'
+        'NLP, LLM, Agentic AI 학습',
+        '프로젝트 로컬 LLM 정량/정성 평가 지표 설계 및 결과 리포팅',
+        '프로젝트 Agent Pipeline LangGraph vs LCEL 비교 실험 및 병목 분석',
       ]
     },
     {
-      company: 'Meta Llama Academy',
+      company: 'Meta Llama Academy: LLM Agent and On-device AI Workshop',
       role: 'Workshop Participant',
-      period: '2025',
+      period: '2025.09 - 2025.10',
       location: 'Remote',
-      summary: 'LLM/Agent 활용 사례와 평가 흐름을 학습한 워크숍 프로그램 참여.',
+      summary: '팀 프로젝트에서 LLM Agent tool을 설계하고 MCP Client와 DB를 구축했습니다.',
       highlights: [
-        '평가 기준 수립과 실험 설계 사례 학습',
-        'LLM 응답 품질/안전성 점검 방법 논의'
+        'RAG, Model Compression 학습',
+        'LangGraph 기반 Agentic Pipeline 설계',
+        'MCP Client & DB 구축 및 MCP 통신 & DB Look-up tool 구축'
+
       ]
     }
   ]
@@ -108,32 +110,42 @@ export const career = {
 export const techStack = [
   {
     title: 'Core Technologies',
-    items: ['Python', 'LangGraph', 'LangChain', 'RAG', 'FastAPI', 'PostgreSQL', 'Docker', 'BERTScore', 'ROUGE']
+    items: [
+      { name: 'Python', note: 'AI-applied backend 설계 및 구현.' },
+      { name: 'LangChain', note: 'Agent Workflow 구성과 체인 설계.' },
+      { name: 'HuggingFace', note: '모델/토크나이저 실험 및 파인튜닝.' },
+      { name: 'RAG', note: '검색-생성 결합 설계와 성능 검증.' },
+      { name: 'Docker', note: '환경 재현과 배포 자동화.' }
+    ]
   },
   {
     title: 'Familiar With',
-    items: ['PyTorch', 'Hugging Face', 'Redis', 'AWS (EC2, RDS, S3)', 'Django', 'React', 'GitHub Actions']
+    items: [
+      { name: 'JavaScript', note: '프론트엔드/툴링 보조 개발.' },
+      { name: 'AWS', note: 'EC2/RDS/ElastiCache 중심 운영 경험.' },
+      { name: 'MCP', note: 'MCP 클라이언트 설계 및 구현' },
+      { name: 'GitHub Actions', note: 'CI/CD 파이프라인 자동화.' }
+    ]
   }
 ];
 
 export const projects = [
   {
     slug: 'ai-influencer-streaming',
-    title: 'AI 인플루언서 기반 실시간 상담 스트리밍',
+    title: 'Love Language Model',
     period: '2025',
-    summary: 'Fine-tuned sLLM 기반 상담 에이전트를 구축하고 평가·검증 파이프라인으로 품질을 안정화한 스트리밍 플랫폼.',
-    role: 'Project Lead / LLM Evaluation Engineer',
+    summary: 'Fine-tuned sLLM 기반 Agent를 구축하고 평가·검증 프로세스로 품질을 안정화한 스트리밍 플랫폼.',
+    role: 'Project Leader / AI-applied Backend Engineer',
     responsibilities: [
       '정량 지표(BERTScore, ROUGE)와 정성 평가(LLM-as-a-Judge) 설계',
       'Safety/Adversarial 테스트 케이스 설계 및 회귀 점검',
       'LangGraph vs LCEL 비교 실험 및 병목 분석',
-      'LangGraph 리팩터링 및 속도 테스트 스크립트 구축'
+      'LangGraph Agent Pipeline 및 LM 추론 서버 개발'
     ],
     evaluation: [
       'BERTScore/ROUGE/Latency 기반 정량 평가 파이프라인 구성',
       'LLM-as-a-Judge로 답변 적합도·일관성 정성 평가',
       'Adversarial 입력 및 안전성 테스트 설계',
-      '프레임워크 전환 시 품질/성능 리그레션 체크'
     ],
     highlights: [
       '평가 기준을 기반으로 응답 품질 변동성 점검',
@@ -141,44 +153,49 @@ export const projects = [
       '실험 로그 정리로 비교 평가 재현성 확보'
     ],
     outcomes: [
-      '평가 결과를 근거로 프롬프트/에이전트 정책 개선',
-      '품질 리그레션 점검 루틴을 확보'
+      'LCEL to LangGraph로 구조 변경 후 처리 속도 20% 향상',
+      '추론 서버 격리로 새로운 SFT에 즉각 대응 가능한 MSA 구현'
     ],
-    growth: '현재는 모델/프레임워크 단위 평가 중심이며, agent module interaction에 대한 system-level testing으로 확장 중.',
     stack: ['Python', 'LangGraph', 'LangChain', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'AWS'],
     links: {
-      github: 'https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-final-4team'
+      reference: {
+        label: 'GitHub',
+        url: 'https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-final-4team'
+      }
     },
     featured: true
   },
   {
-    slug: 'startup-risk-prediction',
-    title: '서울시 업종별 창업 위험 예측',
-    period: '2024',
-    summary: '공공 데이터 기반 업종별 폐업 위험도를 예측하는 ML 모델 개발.',
-    role: 'Data Scientist',
+    slug: 'ai-agent-orchestrator',
+    title: 'Maphack: Context Orchestration Agent',
+    period: '2025',
+    summary: '분산된 업무 데이터를 MCP로 수집하여 일일 업무 우선 순위 리포트를 자동 생성하는 Agent.',
+    role: 'AI-applied Backend Engineer(Infra & MCP)',
     responsibilities: [
-      '데이터 수집 및 전처리 파이프라인 구축',
-      '피처 엔지니어링 및 불균형 데이터 처리',
-      '모델 성능 분석 및 지표 최적화'
+      'MCP 클라이언트 설계 및 구현(w/ Notion, Slack, Gmail MCP 서버)',
+      'Context Registry(SQLite) 스키마와 저장/조회 로직 구축',
+      'MCP Client 호출 Tool 구현'
     ],
     highlights: [
-      'Recall 중심의 지표 설계로 위험군 포착 강화',
-      '지역/업종별 변수 중요도 분석'
+      '클라이언트 → MCP → Orchestrator → 보고서 작성 DB 저장 end-to-end 파이프라인 구현',
+      'Chatbot 간 Context 공유 '
     ],
     outcomes: [
-      '높은 위험군 분류 재현율 확보',
-      '정책 의사결정용 리포트 자동화'
+      '다중 AI 클라이언트 입력을 공통 포맷으로 수집/정규화',
+      '데모용 자동 요약/추출 파이프라인 안정화'
     ],
-    stack: ['Python', 'NumPy', 'Pandas', 'Scikit-learn', 'Streamlit'],
+    stack: ['Python', 'MCP', 'LangGraph', 'FastAPI', 'SQLite', 'Notion', 'APScheduler'],
     links: {
-      github: 'https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-2nd-4team'
+      reference: {
+        label: 'Demo',
+        url: 'https://youtu.be/NgpVF3NpKDw'
+      }
     }
   },
   {
     slug: 'skincare-chatbot',
     title: '기초 화장품 추천 챗봇',
-    period: '2024',
+    period: '2025',
     summary: '리뷰 데이터 기반으로 개인화 추천을 제공하는 챗봇 구축.',
     role: 'ML Engineer',
     responsibilities: [
@@ -187,23 +204,27 @@ export const projects = [
       'RAG 기반 추천 응답 생성'
     ],
     highlights: [
-      'Few-shot Prompting을 통한 응답 품질 개선',
-      'Vector DB 구성 및 질의 최적화'
+      'Few-shot Prompting을 통한 Train & Test Data Augmentation',
+      'Local Sentiment Analysis 모델 SFT(Full Fine-tuning)'
     ],
     outcomes: [
+      '리뷰 데이터에 감성 Labeling으로 검색 효율 향상',
       '추천 정확도 향상',
-      '응답 생성 지연 시간 감소'
+      '응답 생성 지연 시간 감소',
     ],
     stack: ['Python', 'Selenium', 'Pandas', 'OpenAI', 'Hugging Face'],
     links: {
-      github: 'https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-3rd-3team'
+      reference: {
+        label: 'GitHub',
+        url: 'https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-3rd-3team'
+      }
     }
   }
 ];
 
 export const contact = {
   headline: '함께 문제를 풀 파트너를 찾습니다.',
-  message: 'AI 제품화, MLOps, LLM 파이프라인 협업이 필요하시면 언제든지 연락 주세요.',
+  message: 'LLM QA, Agentic Pipeline 관련 협업이 필요하시면 언제든지 연락 주세요.',
   channels: [
     { label: 'Email', value: '8000gam@gmail.com', href: 'mailto:8000gam@gmail.com' },
     { label: 'GitHub', value: 'github.com/iPad7', href: 'https://github.com/iPad7' },

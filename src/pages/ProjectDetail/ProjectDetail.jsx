@@ -43,11 +43,11 @@ const ProjectDetail = ({ project: projectProp, pageNumber }) => {
           <span className={styles.metaLabel}>Period</span>
           <span className={styles.metaValue}>{project.period}</span>
         </div>
-        {project.links?.github && (
+        {project.links?.reference && (
           <div className={styles.metaItem}>
-            <span className={styles.metaLabel}>GitHub</span>
+            <span className={styles.metaLabel}>{project.links.reference.label}</span>
             <span className={styles.metaValue}>
-              {project.links.github.replace('https://', '')}
+              {project.links.reference.url.replace('https://', '')}
             </span>
           </div>
         )}
@@ -73,17 +73,32 @@ const ProjectDetail = ({ project: projectProp, pageNumber }) => {
                 ))}
               </ul>
             </>
-          ) : null}
-          <span className={styles.sectionTitle}>Highlights</span>
-          <ul className={styles.list}>
-            {project.highlights.map((item) => (
-              <li key={item} className={styles.listItem}>
-                {item}
-              </li>
-            ))}
-          </ul>
+          ) : (
+            <>
+              <span className={styles.sectionTitle}>Highlights</span>
+              <ul className={styles.list}>
+                {project.highlights.map((item) => (
+                  <li key={item} className={styles.listItem}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
         <div className={styles.section}>
+          {project.evaluation?.length ? (
+            <>
+              <span className={styles.sectionTitle}>Highlights</span>
+              <ul className={styles.list}>
+                {project.highlights.map((item) => (
+                  <li key={item} className={styles.listItem}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : null}
           <span className={styles.sectionTitle}>Outcomes</span>
           <ul className={styles.list}>
             {project.outcomes.map((item) => (

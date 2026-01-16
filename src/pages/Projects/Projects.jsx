@@ -42,9 +42,10 @@ const Projects = ({ pageNumber }) => {
               <Link to={`/projects/${featured.slug}`} className={`${styles.link} no-print`}>
                 상세 보기
               </Link>
-              {featured.links?.github && (
+              {featured.links?.reference && (
                 <span className={styles.linkHint}>
-                  {featured.links.github.replace('https://', '')}
+                  {featured.links.reference.label}: {' '}
+                  {featured.links.reference.url.replace('https://', '')}
                 </span>
               )}
             </div>

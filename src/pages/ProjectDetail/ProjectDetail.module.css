@@ -1,4 +1,4 @@
-﻿.metaRow {
+.metaRow {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4mm;
@@ -23,6 +23,7 @@
 .metaValue {
   font-size: 0.85rem;
   color: var(--ink-700);
+  line-height: 1.5;
 }
 
 .grid {
@@ -33,7 +34,7 @@
 
 .section {
   display: grid;
-  gap: 4mm;
+  gap: 3mm;
 }
 
 .sectionTitle {
@@ -54,10 +55,11 @@
   padding-left: 16px;
   font-size: 0.85rem;
   color: var(--ink-600);
+  line-height: 1.5;
 }
 
 .listItem::before {
-  content: '•';
+  content: '-';
   position: absolute;
   left: 0;
   color: var(--accent-400);
@@ -92,4 +94,5 @@
   background: var(--surface-muted);
   font-size: 0.85rem;
   color: var(--ink-600);
+  line-height: 1.5;
 }
