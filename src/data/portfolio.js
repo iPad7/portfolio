@@ -83,7 +83,6 @@ export const career = {
       company: 'SK Networks Family AI Camp',
       role: 'AI Engineer Trainee',
       period: '2025.03 - 2025.09',
-      location: 'Seoul, KR',
       summary: '팀 프로젝트에서 LLM Agent 품질 평가와 실험 설계를 중심으로 수행했습니다.',
       highlights: [
         'NLP, LLM, Agentic AI 학습',
@@ -95,7 +94,6 @@ export const career = {
       company: 'Meta Llama Academy: LLM Agent and On-device AI Workshop',
       role: 'Workshop Participant',
       period: '2025.09 - 2025.10',
-      location: 'Remote',
       summary: '팀 프로젝트에서 LLM Agent tool을 설계하고 MCP Client와 DB를 구축했습니다.',
       highlights: [
         'RAG, Model Compression 학습',
