@@ -2,7 +2,7 @@
   name: 'Jaebeom Lee',
   role: 'LLM-based Agent Engineer',
   title: 'LLM-based Agent Engineer',
-  tagline: 'LLM 기반 에이전트를 설계·개선하며 품질과 성능을 함께 다루는 AI 엔지니어입니다.',
+  tagline: 'LLM Agent를 설계·개선하며 품질과 성능을 함께 다루는 AI 엔지니어입니다.',
   location: 'Seoul, KR',
   email: '8000gam@gmail.com',
   github: 'https://github.com/iPad7',
