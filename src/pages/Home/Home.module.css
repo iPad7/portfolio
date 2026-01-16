@@ -9,93 +9,6 @@
   align-items: start;
 }
 
-.profileGrid {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 8mm;
-  margin-top: 8mm;
-}
-
-.profileSummary {
-  display: grid;
-  gap: 3mm;
-}
-
-.profileHeadline {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--ink-900);
-}
-
-.profileSummary p {
-  font-size: 0.85rem;
-  color: var(--ink-600);
-}
-
-.profileSide {
-  display: grid;
-  gap: 3mm;
-}
-
-.profileCard {
-  border: 1px solid var(--line-subtle);
-  border-radius: 14px;
-  padding: 4mm;
-  background: var(--surface-strong);
-  display: grid;
-  gap: 2mm;
-}
-
-.sectionLabel {
-  font-size: 0.65rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--ink-500);
-}
-
-.list {
-  list-style: none;
-  display: grid;
-  gap: 1.5mm;
-}
-
-.listItem {
-  position: relative;
-  padding-left: 12px;
-  font-size: 0.78rem;
-  color: var(--ink-600);
-}
-
-.listItem::before {
-  content: '-';
-  position: absolute;
-  left: 0;
-  color: var(--accent-400);
-}
-
-.factList {
-  display: grid;
-  gap: 1.5mm;
-}
-
-.factItem {
-  display: flex;
-  justify-content: space-between;
-  gap: 6px;
-}
-
-.factLabel {
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--ink-500);
-}
-
-.factValue {
-  font-size: 0.75rem;
-  color: var(--ink-700);
-}
-
 .heroText {
   display: grid;
   gap: 6mm;
@@ -126,48 +39,23 @@
   color: var(--ink-500);
 }
 
-.heroPanel {
-  background: var(--surface-muted);
-  border-radius: 16px;
-  padding: 6mm;
+.photoCard {
+  border-radius: 18px;
+  overflow: hidden;
   border: 1px solid var(--line-subtle);
-  display: grid;
-  gap: 4mm;
+  background: var(--surface-muted);
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
 }
 
-.panelTitle {
-  font-size: 0.7rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--ink-500);
-}
-
-.statGrid {
-  display: grid;
-  gap: 4mm;
-}
-
-.stat {
-  display: grid;
-  gap: 2px;
-}
-
-.statValue {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--ink-900);
-}
-
-.statLabel {
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--ink-500);
-}
-
-.statDetail {
-  font-size: 0.85rem;
-  color: var(--ink-600);
+.photoCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .focusGrid {

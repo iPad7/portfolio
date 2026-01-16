@@ -2,7 +2,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AppShell from './components/AppShell/AppShell';
 import Home from './pages/Home/Home';
-import Profile from './pages/Profile/Profile';
 import Career from './pages/Career/Career';
 import TechStack from './pages/TechStack/TechStack';
 import Projects from './pages/Projects/Projects';
@@ -18,7 +17,6 @@ function App() {
         <Route path="/print" element={<Print />} />
         <Route element={<AppShell />}>
           <Route index element={<Home />} />
-          <Route path="profile" element={<Profile />} />
           <Route path="career" element={<Career />} />
           <Route path="tech-stack" element={<TechStack />} />
           <Route path="projects" element={<Projects />} />

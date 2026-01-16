@@ -16,11 +16,12 @@ const TechStack = ({ pageNumber }) => (
       {techStack.map((category) => (
         <div key={category.title} className={styles.card}>
           <h3 className={styles.cardTitle}>{category.title}</h3>
-          <div className={styles.tagList}>
+          <div className={styles.itemList}>
             {category.items.map((item) => (
-              <span key={item} className={styles.tag}>
-                {item}
-              </span>
+              <div key={item.name} className={styles.item}>
+                <span className={styles.itemName}>{item.name}</span>
+                <span className={styles.itemNote}>{item.note}</span>
+              </div>
             ))}
           </div>
         </div>

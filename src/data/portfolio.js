@@ -1,8 +1,8 @@
 ﻿export const site = {
   name: 'Jaebeom Lee',
-  role: 'LLM Agent Quality Engineer',
-  title: 'LLM Agent Quality Engineer',
-  tagline: 'LLM 기반 Agent 시스템의 품질과 신뢰성을 설계·검증하는 AI 엔지니어',
+  role: 'LLM-based Agent Engineer',
+  title: 'LLM-based Agent Engineer',
+  tagline: 'Model- and framework-level evaluation with a focus on reproducibility and regression checks',
   location: 'Seoul, KR',
   email: '8000gam@gmail.com',
   github: 'https://github.com/iPad7',
@@ -59,7 +59,7 @@ export const profile = {
   ],
   strengths: [
     '평가 지표/프로토콜 설계 및 실험 비교',
-    'LLM-as-a-Judge 기반 정성 평가 자동화',
+    'LLM-as-a-Judge 기반 정성 평가',
     'Latency·비용 측정 포함 성능 벤치마킹',
     '실험 로그와 테스트 스크립트로 재현성 확보'
   ],

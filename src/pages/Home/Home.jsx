@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import A4Page from '../../components/A4Page/A4Page';
-import { site, metrics, focusAreas, profile } from '../../data/portfolio';
+import { site, focusAreas } from '../../data/portfolio';
+import profileImage from '../../assets/images/profile.jpg';
 import styles from './Home.module.css';
 
 const Home = ({ pageNumber }) => (
@@ -31,59 +32,8 @@ const Home = ({ pageNumber }) => (
           </div>
         </div>
       </div>
-      <div className={styles.heroPanel}>
-        <span className={styles.panelTitle}>Snapshot</span>
-        <div className={styles.statGrid}>
-          {metrics.map((metric) => (
-            <div key={metric.label} className={styles.stat}>
-              <span className={styles.statValue}>{metric.value}</span>
-              <span className={styles.statLabel}>{metric.label}</span>
-              <span className={styles.statDetail}>{metric.detail}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-    <div className={styles.profileGrid}>
-      <div className={styles.profileSummary}>
-        <span className={styles.sectionLabel}>Positioning</span>
-        <h3 className={styles.profileHeadline}>{profile.headline}</h3>
-        {profile.summary.map((text) => (
-          <p key={text}>{text}</p>
-        ))}
-      </div>
-      <div className={styles.profileSide}>
-        <div className={styles.profileCard}>
-          <span className={styles.sectionLabel}>Strengths</span>
-          <ul className={styles.list}>
-            {profile.strengths.map((item) => (
-              <li key={item} className={styles.listItem}>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={styles.profileCard}>
-          <span className={styles.sectionLabel}>Values</span>
-          <ul className={styles.list}>
-            {profile.values.map((item) => (
-              <li key={item} className={styles.listItem}>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={styles.profileCard}>
-          <span className={styles.sectionLabel}>Quick Facts</span>
-          <div className={styles.factList}>
-            {profile.facts.map((fact) => (
-              <div key={fact.label} className={styles.factItem}>
-                <span className={styles.factLabel}>{fact.label}</span>
-                <span className={styles.factValue}>{fact.value}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+      <div className={styles.photoCard}>
+        <img src={profileImage} alt={`${site.name} profile`} />
       </div>
     </div>
     <div className={styles.focusGrid}>
