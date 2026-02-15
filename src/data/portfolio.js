@@ -2,7 +2,7 @@
   name: 'Jaebeom Lee',
   role: 'LLM-based Agent Engineer',
   title: 'LLM-based Agent Engineer',
-  tagline: 'LLM Agent를 설계·개선하며 품질과 성능을 함께 다루는 AI 엔지니어입니다.',
+  tagline: 'Bridging the Gap between Knowledge and Action through Agentic Workflows',
   location: 'Seoul, KR',
   email: '8000gam@gmail.com',
   github: 'https://github.com/iPad7',
@@ -42,8 +42,8 @@ export const focusAreas = [
     description: 'PEFT 미세 조정 & 정량/정성 평가 지표 설계.'
   },
   {
-    title: 'Agent Reliability',
-    description: '안전성·회귀 테스트로 응답 품질 안정화.'
+    title: 'Stateful Agent',
+    description: '상태 기반 자율적 의사결정 Agent 설계.'
   },
   {
     title: 'Experiment Design',
@@ -110,7 +110,7 @@ export const techStack = [
     title: 'Core Technologies',
     items: [
       { name: 'Python', note: 'AI-applied backend 설계 및 구현.' },
-      { name: 'LangChain', note: 'Agent Workflow 구성과 체인 설계.' },
+      { name: 'LangChain & LangGraph', note: 'Agent Workflow 구성과 체인 설계.' },
       { name: 'HuggingFace', note: '모델/토크나이저 실험 및 파인튜닝.' },
       { name: 'RAG', note: '검색-생성 결합 설계와 성능 검증.' },
       { name: 'Docker', note: '환경 재현과 배포 자동화.' }
@@ -151,7 +151,7 @@ export const projects = [
       '실험 로그 정리로 비교 평가 재현성 확보'
     ],
     outcomes: [
-      'LCEL to LangGraph로 구조 변경 후 처리 속도 20% 향상',
+      'LCEL → LangGraph로 구조 변경 후 처리 속도 20% 향상',
       '추론 서버 격리로 새로운 SFT에 즉각 대응 가능한 MSA 구현'
     ],
     stack: ['Python', 'LangGraph', 'LangChain', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'AWS'],

@@ -6,7 +6,7 @@ import styles from './Home.module.css';
 
 const Home = ({ pageNumber }) => (
   <A4Page
-    kicker="LLM Agent Quality Engineer Portfolio"
+    kicker=""
     title={site.name}
     subtitle={`${site.title} · ${site.location}`}
     pageNumber={pageNumber}
